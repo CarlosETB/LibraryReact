@@ -1,0 +1,45 @@
+{
+  "series": [
+    {
+      "id": 1,
+      "name": "How I met your father",
+      "status": "watched",
+      "genre": "Comédia",
+      "comments": ""
+    },
+    {
+      "id": 3,
+      "name": "Breaking Bad",
+      "status": "watched",
+      "genre": "Drama",
+      "comments": "Say My Name - melhor cena"
+    },
+    {
+      "id": 4,
+      "name": "Better Call Saul",
+      "status": "toWatch",
+      "genre": "Drama",
+      "comments": "Galera fala bem"
+    },
+    {
+      "name": "teste",
+      "status": "watched",
+      "genre": "Drama",
+      "comments": "ededededede",
+      "id": 6
+    },
+    {
+      "1": "",
+      "id": 7
+    },
+    {
+      "1": "",
+      "id": 8
+    }
+  ],
+  "genres": [
+    "Comédia",
+    "Drama",
+    "Ação"
+  ]
+}
