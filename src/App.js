@@ -8,38 +8,18 @@ import Home from './screens/Home'
 import EditBooks from './screens/EditBook'
 import Books from './screens/Books'
 import NewBooks from './screens/NewBooks'
-
-const About = () => <section className='intro-section'><h1>Sobre</h1></section>
+import About from './screens/About'
 
 class App extends Component {
   render () {
     return (
       <Router>
-
-        <nav class='navbar is-light' role='navigation' aria-label='main navigation'>
-          <div class='navbar-brand'>
-            <a class='navbar-item' href='https://bulma.io'>
-              <img src='https://bulma.io/images/bulma-logo.png' width='112' height='28' />
-            </a>
-          </div>
-
-          <div id='navbarBasicExample' class='navbar-menu'>
-            <div class='navbar-start'>
-              <a class='navbar-item' href='/'>
-                  Menu item
-              </a>
-
-              <a class='navbar-item' href='/new'>
-                  Nova série
-              </a>
-
-              <a class='navbar-item' href='/about'>
-                  Sobre
-              </a>
-            </div>
-          </div>
-        </nav>
-
+        <ul>
+          <li><p><img src='images/logo2.png' width='50%' height='100%' /></p></li>
+          <li><a href='/'>Home</a></li>
+          <li><a href='/new'>Adicionar Livro</a></li>
+          <li><a href='/about'>Sobre</a></li>
+        </ul>
         <Route exact path='/' component={Home} />
         <Route exact path='/books/:genre' component={Books} />
         <Route path='/books-edit/:id' component={EditBooks} />
