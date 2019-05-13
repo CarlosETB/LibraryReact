@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 import {
   BrowserRouter as Router,
-  Route,
-  Link
+  Route
 } from 'react-router-dom'
 
-import Home from './Home'
-import EditSeries from './EditSeries'
-import Series from './Series'
-import NewSeries from './NewSeries'
+import Home from './screens/Home'
+import EditBooks from './screens/EditBook'
+import Books from './screens/Books'
+import NewBooks from './screens/NewBooks'
 
 const About = () => <section className='intro-section'><h1>Sobre</h1></section>
 
@@ -16,36 +15,36 @@ class App extends Component {
   render () {
     return (
       <Router>
-        <div>
-          <nav className='navbar navbar-default navbar-fixed-top' role='navigation'>
-            <div className='container'>
-              <div className='navbar-header page-scroll'>
-                <a className='navbar-brand page-scroll' href='#page-top'>
-                  <img src='/images/logo.png' height='30' />
-                </a>
-              </div>
 
-              <div className='collapse navbar-collapse navbar-ex1-collapse'>
-                <ul className='nav navbar-nav'>
-                  <li>
-                    <Link to='/'>Menu item</Link>
-                  </li>
-                  <li>
-                    <Link to='/new'>Nova série</Link>
-                  </li>
-                  <li>
-                    <Link to='/about'>Sobre</Link>
-                  </li>
-                </ul>
-              </div>
+        <nav class='navbar is-light' role='navigation' aria-label='main navigation'>
+          <div class='navbar-brand'>
+            <a class='navbar-item' href='https://bulma.io'>
+              <img src='https://bulma.io/images/bulma-logo.png' width='112' height='28' />
+            </a>
+          </div>
+
+          <div id='navbarBasicExample' class='navbar-menu'>
+            <div class='navbar-start'>
+              <a class='navbar-item' href='/'>
+                  Menu item
+              </a>
+
+              <a class='navbar-item' href='/new'>
+                  Nova série
+              </a>
+
+              <a class='navbar-item' href='/about'>
+                  Sobre
+              </a>
             </div>
-          </nav>
-        </div>
+          </div>
+        </nav>
+
         <Route exact path='/' component={Home} />
-        <Route exact path='/series/:genre' component={Series} />
-        <Route path='/series-edit/:id' component={EditSeries} />
+        <Route exact path='/books/:genre' component={Books} />
+        <Route path='/books-edit/:id' component={EditBooks} />
         <Route exact path='/about' component={About} />
-        <Route exact path='/new' component={NewSeries} />
+        <Route exact path='/new' component={NewBooks} />
       </Router>
     )
   }

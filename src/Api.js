@@ -5,17 +5,17 @@ const api = axios.create({
 })
 
 export const loadGenres = () => api.get('genres')
-export const saveSeries = (newSeries) => api.post('series', newSeries)
-export const updateSeries = (series) => api.put('series/' + series.id, series)
-export const loadSeriesByGenre = (genre) => api.get('series?genre=' + genre)
-export const deleteSeries = (id) => api.delete('series/' + id)
-export const loadSeriesById = (id) => api.get('series/' + id)
+export const saveBooks = (newBooks) => api.post('books', newBooks)
+export const updateBooks = (books) => api.put('books/' + books.id, books)
+export const loadBooksByGenre = (genre) => api.get('books?genre=' + genre)
+export const deleteBooks = (id) => api.delete('books/' + id)
+export const loadBooksById = (id) => api.get('books/' + id)
 const apis = {
   loadGenres,
-  saveSeries,
-  loadSeriesByGenre,
-  deleteSeries,
-  loadSeriesById,
-  updateSeries
+  saveBooks,
+  loadBooksByGenre,
+  deleteBooks,
+  loadBooksById,
+  updateBooks
 }
 export default apis

@@ -1,32 +1,11 @@
 {
-  "series": [
-    {
-      "id": 1,
-      "name": "How I met your father",
-      "status": "watched",
-      "genre": "Comédia",
-      "comments": ""
-    },
-    {
-      "id": 3,
-      "name": "Breaking Bad",
-      "status": "watched",
-      "genre": "Drama",
-      "comments": "Say My Name - melhor cena"
-    },
+  "books": [
     {
       "id": 4,
-      "name": "Better Call Saul",
-      "status": "toWatch",
-      "genre": "Drama",
-      "comments": "Galera fala bem"
-    },
-    {
-      "name": "teste",
+      "name": "Better Call Saul 2",
       "status": "watched",
-      "genre": "Drama",
-      "comments": "ededededede",
-      "id": 6
+      "genre": "Comédia",
+      "comments": "dedede"
     },
     {
       "1": "",
@@ -35,11 +14,49 @@
     {
       "1": "",
       "id": 8
+    },
+    {
+      "name": "dededed",
+      "status": "watched",
+      "genre": "Comédia",
+      "comments": "dedededed",
+      "id": 9
+    },
+    {
+      "name": "Sabrina",
+      "status": "watched",
+      "genre": "Drama",
+      "comments": "bom bom",
+      "id": 10
+    },
+    {
+      "name": "Pequeno principe",
+      "status": "watched",
+      "genre": "Aventura",
+      "comments": "Bom livro",
+      "id": 11
+    },
+    {
+      "name": "dede",
+      "status": "watched",
+      "genre": "Ação",
+      "comments": "dede",
+      "id": 12
     }
   ],
   "genres": [
+    "Ação",
+    "Animação",
+    "Aventura",
     "Comédia",
     "Drama",
-    "Ação"
+    "Espionagem",
+    "Faroeste - western",
+    "Ficção científica",
+    "Musical",
+    "Romance",
+    "Seriado",
+    "Suspense",
+    "Terror - horror"
   ]
 }
