@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import api from '../Api'
+// import api from '../Api'
 import '../css/books.css'
+import axios from 'axios'
 
 class Home extends Component {
   constructor (props) {
@@ -12,14 +13,14 @@ class Home extends Component {
     }
   }
   componentDidMount () {
-    this.setState({ isLoading: true })
-    api.loadGenres()
-      .then((res) => {
-        this.setState({
-          isLoading: false,
-          genres: res.data
-        })
-      })
+    this.setState({ isLoading: false })
+    fetch('http://8285a771.ngrok.io', {
+      method: 'GET',
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': '*'
+      }
+    }).then((res) => this.setState({ genre: res }))
   }
   renderGenreLink (genre) {
     return (
@@ -30,7 +31,6 @@ class Home extends Component {
     return (
       <div>
         <section id='intro' className='field has-addons has-addons-centered'>
-
           <div className='row'>
             <div className='line'><img src='images/library.png' /></div>
           </div>
