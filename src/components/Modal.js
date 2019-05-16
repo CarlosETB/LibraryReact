@@ -1,41 +1,52 @@
 import React, { Component } from 'react'
-import '../css/modal.css'
 
 class Modal extends Component {
+  closeNav () {
+    document.getElementById('myNav').style.height = '0%'
+  }
   render () {
     return (
-      <body>
+      <body style={{ borderRadius: '4px', backgroundColor: 'white', width: '50%', margin: '0 auto' }}>
+        <div class='content'>
 
-        <h2>Responsive Social Login Form</h2>
-        <p>Resize the browser window to see the responsive effect. When the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other.</p>
-
-        <div class='container'>
           <form action='/action_page.php'>
+            <header class='header'>
+              <a style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                fontSize: '20px',
+                width: '35px',
+                height: '35px',
+                borderRadius: '100%'
+              }} href='javascript:void(0)' class='header-right social' onClick={this.closeNav} title='Close Modal'>
+                <i class='glyphicon glyphicon-remove' />
+              </a>
+            </header>
             <div class='row'>
-              <h2 style='text-align:center'>Login with Social Media or Manually</h2>
               <div class='vl'>
                 <span class='vl-innertext'>or</span>
               </div>
 
               <div class='col'>
                 <a href='#' class='fb btn'>
-                  <i class='fa fa-facebook fa-fw' /> Login with Facebook
+                  <i class='fa fa-facebook fa-fw social' />
+                  <label style={{ marginLeft: '5px' }} class='social'>Login with Facebook</label>
                 </a>
                 <a href='#' class='twitter btn'>
-                  <i class='fa fa-twitter fa-fw' /> Login with Twitter
+                  <i class='fa fa-twitter fa-fw social' />
+                  <label style={{ marginLeft: '5px' }} class='social'>Login with Twitter</label>
                 </a>
-                <a href='#' class='google btn'><i class='fa fa-google fa-fw' /> Login with Google+
+                <a href='#' class='google btn'>
+                  <i class='fa fa-google fa-fw social' />
+                  <label style={{ marginLeft: '5px' }} class='social'>Login with Google+</label>
                 </a>
               </div>
 
               <div class='col'>
-                <div class='hide-md-lg'>
-                  <p>Or sign in manually:</p>
-                </div>
-
-                <input type='text' name='username' placeholder='Username' required />
-                <input type='password' name='password' placeholder='Password' required />
-                <input type='submit' value='Login' />
+                <input class='btn' type='text' name='username' placeholder='Username' required />
+                <input class='btn' type='password' name='password' placeholder='Password' required />
+                <input class='btn' type='submit' value='Login' />
               </div>
 
             </div>
@@ -45,14 +56,13 @@ class Modal extends Component {
         <div class='bottom-container'>
           <div class='row'>
             <div class='col'>
-              <a href='#' style='color:white' class='btn'>Sign up</a>
+              <a href='#' style={{ color: 'white', fontSize: '17px' }} class='btn'>Sign up</a>
             </div>
             <div class='col'>
-              <a href='#' style='color:white' class='btn'>Forgot password?</a>
+              <a href='#' style={{ color: 'white', fontSize: '17px' }} class='btn'>Forgot password?</a>
             </div>
           </div>
         </div>
-
       </body>
     )
   }

@@ -1,10 +1,10 @@
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
     overflow: hidden;
     border: none;
     background-color: #555;
+    width: 100%;
   }
   
   li {
@@ -13,18 +13,18 @@ ul {
   }
   
   li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
   }
 
   li p {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 12px;
     text-decoration: none;
   }
   
@@ -36,4 +36,89 @@ ul {
   li:last-child {
     float:right;
     border-right: none;
+    margin-right: 10px
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-y: hidden;
+  transition: 0.5s;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-top: 50px
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 12px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: #f1f1f1;
+  color: #555
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #f1f1f1;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: #555;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
 }

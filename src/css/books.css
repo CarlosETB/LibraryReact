@@ -54,6 +54,8 @@
 
 .texto{
   margin-left: 30px;
+  display: flex;
+  align-items: center
 }
 
 .aviso{
@@ -66,3 +68,4 @@
   justify-content: center;
   align-items: center;  
 }
+

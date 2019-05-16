@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import api from '../Api'
-import '../css/books.css'
 import { Link } from 'react-router-dom'
+import '../css/books.css'
+import api from '../Api'
 
 const statuses = {
   'watched': 'Lido',

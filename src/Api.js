@@ -1,23 +1,23 @@
 import axios from 'axios'
 
 const api = axios.create({
-  // baseURL: 'http://localhost:3001'
-  baseURL: 'http://719a5915.ngrok.io/api'
+  baseURL: 'http://localhost:3001'
 })
 
-export const loadGenres = () => api.get('livros')
-/*
+export const load = (lig) => api.get('books', load)
+export const loadGenres = () => api.get('genres')
 export const saveBooks = (newBooks) => api.post('books', newBooks)
 export const updateBooks = (books) => api.put('books/' + books.id, books)
 export const loadBooksByGenre = (genre) => api.get('books?genre=' + genre)
 export const deleteBooks = (id) => api.delete('books/' + id)
-export const loadBooksById = (id) => api.get('books/' + id) */
+export const loadBooksById = (id) => api.get('books/' + id)
 const apis = {
-  loadGenres
-  /* saveBooks,
+  load,
+  loadGenres,
+  saveBooks,
   loadBooksByGenre,
   deleteBooks,
   loadBooksById,
-  updateBooks */
+  updateBooks
 }
 export default apis

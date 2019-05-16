@@ -1,17 +1,17 @@
 .divAbout {
-    margin: 20px 100px 0px 100px;
+    margin: 20px 200px 0px 200px;
   }
   
   .h1About {
     text-align: center;
     text-transform: uppercase;
-    color: #4CAF50;
+    color: #555;
     font-size: 30px;
     margin: 10px
   }
   
   .pAbout {
     text-indent: 50px;
-    text-align: center;
+    text-align: justify;
     letter-spacing: 3px;
   }

@@ -36,7 +36,8 @@ class NewBooks extends Component {
       name: this.refs.name.value,
       status: this.refs.status.value,
       genre: this.refs.genre.value,
-      comments: this.refs.comments.value
+      comments: this.refs.comments.value,
+      lig: 'tres'
     }
     api.saveBooks(newBooks)
       .then((res) => {
