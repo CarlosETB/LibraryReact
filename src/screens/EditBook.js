@@ -3,9 +3,9 @@ import api from '../Api'
 import { Redirect, Link } from 'react-router-dom'
 
 const statuses = {
-  'watched': 'Assistido',
-  'watching': 'Assistindo',
-  'toWathch': 'Assistir'
+  'watched': 'Lido',
+  'watching': 'Lendo',
+  'toWathch': 'Ler'
 }
 
 class EditBooks extends Component {

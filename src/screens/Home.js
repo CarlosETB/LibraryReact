@@ -80,11 +80,9 @@ class Home extends Component {
       <div >
         <div>
 
-          <section id='intro' className='field has-addons has-addons-centered'>
-
+          <section id='intro' style={{ padding: '20px 0 20px 0' }} className='field has-addons has-addons-centered'>
             <div className='row'>
               <h1><img src='images/library.png' /></h1>
-
             </div>
           </section>
 

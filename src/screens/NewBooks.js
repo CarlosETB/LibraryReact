@@ -4,9 +4,9 @@ import { Redirect, Link } from 'react-router-dom'
 import '../css/books.css'
 
 const statuses = {
-  'watched': 'Assistido',
-  'watching': 'Assistindo',
-  'toWathch': 'Assistir'
+  'watched': 'Lido',
+  'watching': 'Lendo',
+  'toWathch': 'Ler'
 }
 
 class NewBooks extends Component {
@@ -52,7 +52,7 @@ class NewBooks extends Component {
         {this.state.redirect &&
           <Redirect to={this.state.redirect} />
         }
-        <div class='field has-addons has-addons-centered'>
+        <div style={{ padding: '20px 0 20px 0' }} class='field has-addons has-addons-centered'>
           <label class='subtitle is-2'>Nova série</label>
         </div>
         <div class='field has-addons has-addons-centered'>
@@ -112,7 +112,7 @@ class NewBooks extends Component {
               <button class='button is-rounded is-success is-outlined' onClick={this.saveBooks}>Salvar</button>
             </p>
             <p class='control '>
-              <Link className='link' to={'/books'}><button class='button is-rounded is-danger is-outlined'>Excluir</button></Link>
+              <Link className='link' to={'/books'}><button class='button is-rounded is-danger is-outlined'>Cancelar</button></Link>
             </p>
           </div>
         </div>

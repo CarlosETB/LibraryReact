@@ -1,20 +1,12 @@
 {
   "books": [
     {
-      "name": "dededede",
+      "name": "wsws",
       "status": "watched",
       "genre": "Ação",
-      "comments": "ededede",
+      "comments": "dede",
       "lig": "tres",
       "id": 1
-    },
-    {
-      "name": "eeeeeeeeeeeeee",
-      "status": "watched",
-      "genre": "Aventura",
-      "comments": "eeeeeeeeeeee",
-      "lig": "tres",
-      "id": 2
     }
   ],
   "genres": [
@@ -23,8 +15,8 @@
     "Comédia",
     "Drama",
     "Espionagem",
-    "Faroeste - Western",
-    "Ficção científica",
+    "Faroeste",
+    "Ficção Científica",
     "Romance",
     "Suspense",
     "Terror - Horror"

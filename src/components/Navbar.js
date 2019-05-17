@@ -10,6 +10,7 @@ import EditBooks from '../screens/EditBook'
 import Books from '../screens/Books'
 import NewBooks from '../screens/NewBooks'
 import About from '../screens/About'
+import Register from '../screens/Register'
 import Modal from '../components/Modal'
 import api from '../Api'
 
@@ -71,6 +72,7 @@ class Navbar extends Component {
         <Route path='/books-edit/:id' component={EditBooks} />
         <Route exact path='/about' component={About} />
         <Route exact path='/new' component={NewBooks} />
+        <Route exact path='/register' component={Register} />
       </Router>
     )
   }

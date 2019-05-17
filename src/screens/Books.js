@@ -48,6 +48,7 @@ class Books extends Component {
             <div className='line'>
               <p className='lead'>{books.genre} - {statuses[books.status]}</p>
             </div>
+
             <div className='back'>
               <div class='field has-addons '>
                 <p class='control '>
@@ -69,7 +70,7 @@ class Books extends Component {
       <div>
         <div>
 
-          <div class='line'>
+          <div class='line' style={{ padding: '20px 0 20px 0' }}>
             <label class='subtitle is-2'>Livros de {this.props.match.params.genre}</label>
           </div>
 
