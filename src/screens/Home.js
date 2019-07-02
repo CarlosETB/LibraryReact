@@ -87,7 +87,7 @@ class Home extends Component {
           </section>
 
           {this.state.isLoading &&
-          <p>Carregando, aguarede...</p>
+          <p>Carregando, aguarde...</p>
           }
           {
             !this.state.isLoading && this.state.books.length === 0 &&
