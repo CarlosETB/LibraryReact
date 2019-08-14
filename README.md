@@ -1,6 +1,6 @@
 # LibraryReact
 
-## Web app de biblioteca usando react.js, axios e Json.server
+Web app de biblioteca usando react.js, axios e Json.server
 
 ➜ Link do curso [ https://www.devpleno.com/seriereactjs-aulas ]
 
