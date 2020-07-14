@@ -1,6 +1,6 @@
 # LibraryReact
+[![Made by DevPleno](https://img.shields.io/badge/made%20by-DevPleno-%b70000)](https://devpleno.com/)
 
-Web app de biblioteca usando react.js, axios e Json.server
 
 ➜ Link do curso [ https://www.devpleno.com/seriereactjs-aulas ]
 
