@@ -1,5 +1,5 @@
 # LibraryReact
-[![Made by DevPleno](https://img.shields.io/badge/made%20by-DevPleno-%c865a6)](https://devpleno.com/)
+[![Made by DevPleno](https://img.shields.io/badge/made%20by-DevPleno-%23c865a6)](https://devpleno.com/)
 
 
 ➜ Link do curso [ https://www.devpleno.com/seriereactjs-aulas ]
